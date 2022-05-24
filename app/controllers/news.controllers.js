@@ -55,7 +55,7 @@ exports.findAllMix = (req, res) => {
                description: news.description_AR
                   .replace(/(<([^>]+)>)/gi, "")
                   .replace(/\&nbsp;|&rlm;|\r?\n|\r/gi, ""),
-               newsImage: `https://unionbank.iq${news.news_Icon.replace(/~/g, "")}`,
+               newsImage: `${news.news_Icon.replace(/~/g, "")}`,
                newsDate: news.date,
                fromBank: true,
             };
